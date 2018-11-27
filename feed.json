@@ -10,19 +10,34 @@
     },
     "items": [
         {
-            "id": "https://mk-nyein.github.io/publii_test/this-is-the-another-page.html",
-            "url": "https://mk-nyein.github.io/publii_test/this-is-the-another-page.html",
-            "title": "This is the another page.",
-            "summary": "function ListItem({ item }) { return ( &lt;Fragment&gt; &lt;dt&gt;{item.term}&lt;/dt&gt; &lt;dd&gt;{item.description}&lt;/dd&gt; &lt;/Fragment&gt; ); } function Glossary(props) { return ( &lt;dl&gt; {props.items.map(item =&gt; ( &lt;ListItem item={item} key={item.id} /&gt; ))} &lt;/dl&gt; ); }Use context moreAs the officials say about it, Context provides a way to pass data through the&hellip;",
-            "content_html": "<pre><code class=\"markup--code markup--pre-code u-paddingRight0 u-marginRight0\">function ListItem({ item }) {<br>  return (<br><strong class=\"markup--strong markup--pre-strong\">    &lt;Fragment&gt;</strong><br>      &lt;dt&gt;{item.term}&lt;/dt&gt;<br>      &lt;dd&gt;{item.description}&lt;/dd&gt;<br><strong class=\"markup--strong markup--pre-strong\">    &lt;/Fragment&gt;</strong><br>  );<br>}<br><br>function Glossary(props) {<br>  return (<br>    &lt;dl&gt;<br>      {props.items.map(item =&gt; (<br>        &lt;ListItem item={item} key={item.id} /&gt;<br>      ))}<br>    &lt;/dl&gt;<br>  );<br>}</code></pre>\n<h3 id=\"1d7d\" class=\"graf graf--h3 graf-after--p\">Use context more</h3>\n<p id=\"c835\" class=\"graf graf--p graf-after--h3\">As the officials say about it, Context provides a way to pass data through the component tree without having to pass props down manually at every level.</p>\n<p id=\"b9ac\" class=\"graf graf--p graf-after--p\">So if you have multiple components that needs a value then use context. If you have only a single child component that needs this value use <a href=\"https://reactjs.org/docs/context.html#before-you-use-context\"  class=\"markup--anchor markup--p-anchor\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">compositions</a>.</p>\n<p id=\"a9c1\" class=\"graf graf--p graf-after--p\">one example to set theme from the official docs,</p>\n<h3 id=\"f0a1\" class=\"graf graf--h3 graf-after--pre\">Have at least one Error Boundaries</h3>\n<p id=\"b0ad\" class=\"graf graf--p graf-after--h3\">React 16 comes with an amazing feature Error Boundaries. As the name suggests, It bounds the error of all the child components. The idea is very simple. Create a React component and use it as parent wherever you want to handle the errors. If there is any error in your child component then your Error Boundary component will be called to handle the error.</p>\n<blockquote id=\"2fe5\" class=\"graf graf--blockquote graf-after--p\"><span class=\"markup--quote markup--blockquote-quote is-other\" >Keep in mind that rendering error are handled using error boundaries. Imperative errors such as in Event handlers should be handled using javascript try/catch blocks.</span></blockquote>",
-            "image": "https://mk-nyein.github.io/publii_test/media/posts/2/",
+            "id": "https://mk-nyein.github.io/publii_test/where-is-the-another-post.html",
+            "url": "https://mk-nyein.github.io/publii_test/where-is-the-another-post.html",
+            "title": "where is the another post",
+            "summary": "blah blah",
+            "content_html": "blah blah",
+            "image": "https://mk-nyein.github.io/publii_test/media/posts/3/",
             "author": {
                 "name": "MayKhineNyein"
             },
             "tags": [
             ],
-            "date_published": "2018-11-26T10:37:31+06:30",
-            "date_modified": "2018-11-26T10:37:31+06:30"
+            "date_published": "2018-11-27T12:53:53+06:30",
+            "date_modified": "2018-11-27T12:53:53+06:30"
+        },
+        {
+            "id": "https://mk-nyein.github.io/publii_test/this-is-the-very-first-page.html",
+            "url": "https://mk-nyein.github.io/publii_test/this-is-the-very-first-page.html",
+            "title": "This is the very first page",
+            "summary": "We all love ReactJS. It is one of the best and popular way to create SPA(Single Page Application). It offers flexibility and facility. It has great feature to use it to create a single component in the existing website or use it to create the whole website from scratch.",
+            "content_html": "<section class=\"section section--body section--first\">\n<div class=\"section-content\">\n<div class=\"section-inner sectionLayout--insetColumn\">\n<p id=\"dd98\" class=\"graf graf--p graf-after--figure\">We all love ReactJS. It is one of the best and popular way to create SPA(Single Page Application). It offers flexibility and facility. It has great feature to use it to create a single component in the <a href=\"https://reactjs.org/docs/add-react-to-a-website.html\"  class=\"markup--anchor markup--p-anchor\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">existing website</a> or use it to create the <a href=\"https://reactjs.org/docs/create-a-new-react-app.html\"  class=\"markup--anchor markup--p-anchor\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">whole website</a> from scratch.</p>\n<p id=\"1cdf\" class=\"graf graf--p graf-after--p graf--trailing\">Now ReactJS is a framework used by many other frameworks or toolkits such as <a href=\"http://nextjs.org/\"  class=\"markup--anchor markup--p-anchor\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">NextJs</a>, <a href=\"https://www.gatsbyjs.org/\"  class=\"markup--anchor markup--p-anchor\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">GatsByJs</a>, Razzle, <a href=\"https://github.com/jaredpalmer/after.js\"  class=\"markup--anchor markup--p-anchor\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">AfterJs</a> etc. So becoming a better ReactJS developer will in turn help you to better use these frameworks.</p>\n</div>\n</div>\n</section>\n<section class=\"section section--body\">\n<div class=\"section-content\">\n<h2 class=\"section-inner sectionLayout--insetColumn\">Use Fragment instead of div</h2>\n<div class=\"section-inner sectionLayout--insetColumn\">\n<p id=\"d81f\" class=\"graf graf--p graf-after--h3\">Many times we want to hold multiple components and as render allows only one component to return, we use div tag to contain all of our components. This add an extra HTML element in our document.</p>\n<p id=\"14f6\" class=\"graf graf--p graf-after--p\">According to the official guide,</p>\n<blockquote>\n<p id=\"373c\">Sometimes we break HTML semantics when we add &lt;div&gt; elements to our JSX to make our React code work, especially when working with lists (&lt;ol&gt;, &lt;ul&gt; and &lt;dl&gt;) and the HTML &lt;table&gt;. In these cases we should rather use <a href=\"https://reactjs.org/docs/fragments.html\"  rel=\"nofollow noopener noreferrer\" target=\"_blank\">React Fragments</a> to group together multiple elements.</p>\n</blockquote>\n</div>\n</div>\n</section>",
+            "image": "https://mk-nyein.github.io/publii_test/media/posts/1/",
+            "author": {
+                "name": "MayKhineNyein"
+            },
+            "tags": [
+            ],
+            "date_published": "2018-11-27T12:45:44+06:30",
+            "date_modified": "2018-11-27T12:53:19+06:30"
         }
     ]
 }
